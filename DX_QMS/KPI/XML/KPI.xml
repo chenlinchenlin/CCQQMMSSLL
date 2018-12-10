@@ -1,0 +1,195 @@
+﻿<XtraSerializer version="1.0" application="View">
+  <property name="#LayoutVersion" />
+  <property name="OptionsSelection" isnull="true" iskey="true">
+    <property name="MultiSelectMode">RowSelect</property>
+    <property name="ShowCheckBoxSelectorInColumnHeader">Default</property>
+    <property name="ShowCheckBoxSelectorInGroupRow">Default</property>
+    <property name="ShowCheckBoxSelectorChangesSelectionNavigation">Default</property>
+    <property name="ShowCheckBoxSelectorInPrintExport">Default</property>
+    <property name="CheckBoxSelectorColumnWidth">0</property>
+    <property name="ResetSelectionClickOutsideCheckboxSelector">false</property>
+  </property>
+  <property name="OptionsNavigation" isnull="true" iskey="true">
+    <property name="UseAdvHorzNavigation">true</property>
+    <property name="UseAdvVertNavigation">true</property>
+    <property name="UseOfficePageNavigation">true</property>
+    <property name="AutoFocusNewRow">false</property>
+    <property name="AutoMoveRowFocus">true</property>
+    <property name="EnterMoveNextColumn">false</property>
+    <property name="UseTabKey">true</property>
+  </property>
+  <property name="Columns" iskey="true" value="7">
+    <property name="Item1" isnull="true" iskey="true">
+      <property name="VisibleIndex">0</property>
+      <property name="Fixed">None</property>
+      <property name="Name">colKpiYeartime</property>
+      <property name="Caption">年份</property>
+      <property name="FieldName">KpiYeartime</property>
+      <property name="ColumnEditName" />
+      <property name="Visible">true</property>
+      <property name="Width">256</property>
+    </property>
+    <property name="Item2" isnull="true" iskey="true">
+      <property name="VisibleIndex">1</property>
+      <property name="Fixed">None</property>
+      <property name="Name">colbusinessType</property>
+      <property name="Caption">业务类型</property>
+      <property name="FieldName">businessType</property>
+      <property name="ColumnEditName" />
+      <property name="Visible">true</property>
+      <property name="Width">265</property>
+      <property name="Summary" iskey="true" value="1">
+        <property name="Item1" isnull="true" iskey="true">
+          <property name="Tag" isnull="true" />
+          <property name="FieldName">businessType</property>
+          <property name="SummaryType">Count</property>
+          <property name="DisplayFormat" />
+        </property>
+      </property>
+    </property>
+    <property name="Item3" isnull="true" iskey="true">
+      <property name="VisibleIndex">6</property>
+      <property name="RowIndex">1</property>
+      <property name="Fixed">None</property>
+      <property name="Name">colindicatorsName</property>
+      <property name="Caption">指标名称</property>
+      <property name="FieldName">indicatorsName</property>
+      <property name="ColumnEditName" />
+      <property name="Visible">true</property>
+      <property name="Width">685</property>
+    </property>
+    <property name="Item4" isnull="true" iskey="true">
+      <property name="VisibleIndex">2</property>
+      <property name="RowIndex">1</property>
+      <property name="Fixed">None</property>
+      <property name="Name">colcheckDepartment</property>
+      <property name="Caption">考核部门</property>
+      <property name="FieldName">checkDepartment</property>
+      <property name="ColumnEditName" />
+      <property name="Visible">true</property>
+      <property name="Width">205</property>
+    </property>
+    <property name="Item5" isnull="true" iskey="true">
+      <property name="VisibleIndex">3</property>
+      <property name="RowIndex">1</property>
+      <property name="Fixed">None</property>
+      <property name="Name">colundertakeLevel</property>
+      <property name="Caption">承担级别</property>
+      <property name="FieldName">undertakeLevel</property>
+      <property name="ColumnEditName" />
+      <property name="Visible">true</property>
+      <property name="Width">316</property>
+    </property>
+    <property name="Item6" isnull="true" iskey="true">
+      <property name="VisibleIndex">5</property>
+      <property name="Fixed">None</property>
+      <property name="Name">colqualityMan</property>
+      <property name="Caption">质量部责任人</property>
+      <property name="FieldName">qualityMan</property>
+      <property name="ColumnEditName" />
+      <property name="Visible">true</property>
+      <property name="Width">457</property>
+    </property>
+    <property name="Item7" isnull="true" iskey="true">
+      <property name="VisibleIndex">4</property>
+      <property name="Fixed">None</property>
+      <property name="Name">coldataSource</property>
+      <property name="Caption">数据来源</property>
+      <property name="FieldName">dataSource</property>
+      <property name="ColumnEditName" />
+      <property name="Visible">true</property>
+      <property name="Width">228</property>
+    </property>
+  </property>
+  <property name="MinBandPanelRowCount">1</property>
+  <property name="OptionsPrint" isnull="true" iskey="true">
+    <property name="PrintDetails">true</property>
+  </property>
+  <property name="BandPanelRowHeight">-1</property>
+  <property name="OptionsDetail" isnull="true" iskey="true">
+    <property name="ShowDetailTabs">false</property>
+  </property>
+  <property name="OptionsMenu" isnull="true" iskey="true">
+    <property name="ShowGroupSummaryEditorItem">true</property>
+  </property>
+  <property name="FixedLineWidth">2</property>
+  <property name="IndicatorWidth">-1</property>
+  <property name="ColumnPanelRowHeight">-1</property>
+  <property name="RowSeparatorHeight">1</property>
+  <property name="FooterPanelHeight">-1</property>
+  <property name="HorzScrollVisibility">Auto</property>
+  <property name="VertScrollVisibility">Auto</property>
+  <property name="RowHeight">-1</property>
+  <property name="GroupRowHeight">-1</property>
+  <property name="GroupFormat">{0}: [#image]{1} {2}</property>
+  <property name="ChildGridLevelName" />
+  <property name="VertScrollTipFieldName" />
+  <property name="PreviewFieldName" />
+  <property name="GroupPanelText" />
+  <property name="NewItemRowText" />
+  <property name="LevelIndent">-1</property>
+  <property name="PreviewIndent">-1</property>
+  <property name="PreviewLineCount">-1</property>
+  <property name="ScrollStyle">LiveVertScroll, LiveHorzScroll</property>
+  <property name="FocusRectStyle">CellFocus</property>
+  <property name="HorzScrollStep">0</property>
+  <property name="ActiveFilterEnabled">true</property>
+  <property name="ViewCaptionHeight">-1</property>
+  <property name="ViewCaption" />
+  <property name="BorderStyle">Default</property>
+  <property name="SynchronizeClones">true</property>
+  <property name="DetailTabHeaderLocation">Top</property>
+  <property name="Name">advBandedGridView</property>
+  <property name="DetailHeight">350</property>
+  <property name="Tag" isnull="true" />
+  <property name="Bands" iskey="true" value="2">
+    <property name="Item1" isnull="true" iskey="true">
+      <property name="Width">521</property>
+      <property name="Columns" iskey="true" value="4">
+        <property name="Item1">colKpiYeartime</property>
+        <property name="Item2">colbusinessType</property>
+        <property name="Item3">colcheckDepartment</property>
+        <property name="Item4">colundertakeLevel</property>
+      </property>
+      <property name="Children" iskey="true" value="0" />
+      <property name="Caption">质量KPI监控数据</property>
+      <property name="Name">gridBand1</property>
+    </property>
+    <property name="Item2" isnull="true" iskey="true">
+      <property name="Width">685</property>
+      <property name="Columns" iskey="true" value="3">
+        <property name="Item1">coldataSource</property>
+        <property name="Item2">colqualityMan</property>
+        <property name="Item3">colindicatorsName</property>
+      </property>
+      <property name="Children" iskey="true" value="0" />
+      <property name="Caption">信息</property>
+      <property name="Name">gridBand2</property>
+    </property>
+  </property>
+  <property name="GroupSummary" iskey="true" value="0" />
+  <property name="ActiveFilterString" />
+  <property name="FormatRules" iskey="true" value="1">
+    <property name="Item1" isnull="true" iskey="true">
+      <property name="ApplyToRow">true</property>
+      <property name="Name">Format0</property>
+      <property name="RuleType">#FormatConditionRuleValue</property>
+      <property name="Rule" isnull="true" iskey="true">
+        <property name="Condition">Equal</property>
+        <property name="Value1" type="System.Boolean">true</property>
+        <property name="Appearance" isnull="true" iskey="true">
+          <property name="Options" isnull="true" iskey="true">
+            <property name="UseForeColor">true</property>
+            <property name="UseFont">true</property>
+          </property>
+          <property name="ForeColor">ControlDark</property>
+          <property name="Font">Tahoma, 8pt, style=Strikeout</property>
+        </property>
+      </property>
+    </property>
+  </property>
+  <property name="FormatConditions" iskey="true" value="0" />
+  <property name="GroupSummarySortInfoState" />
+  <property name="FindFilterText" />
+  <property name="FindPanelVisible">false</property>
+</XtraSerializer>

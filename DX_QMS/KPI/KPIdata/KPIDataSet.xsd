@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="KPIDataSet" targetNamespace="http://tempuri.org/KPIDataSet.xsd" xmlns:mstns="http://tempuri.org/KPIDataSet.xsd" xmlns="http://tempuri.org/KPIDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="BarCodeNewConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="BarCodeNewConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.DX_QMS.Properties.Settings.GlobalReference.Default.BarCodeNewConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="QMS_KPIDataSourceTableAdapter" GeneratorDataComponentClassName="QMS_KPIDataSourceTableAdapter" Name="QMS_KPIDataSource" UserDataComponentName="QMS_KPIDataSourceTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BarCodeNewConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill" />
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="KpiYeartime" DataSetColumn="KpiYeartime" />
+              <Mapping SourceColumn="kpiMonthtime" DataSetColumn="kpiMonthtime" />
+              <Mapping SourceColumn="businessType" DataSetColumn="businessType" />
+              <Mapping SourceColumn="indicatorsName" DataSetColumn="indicatorsName" />
+              <Mapping SourceColumn="checkDepartment" DataSetColumn="checkDepartment" />
+              <Mapping SourceColumn="undertakeLevel" DataSetColumn="undertakeLevel" />
+              <Mapping SourceColumn="qualityMan" DataSetColumn="qualityMan" />
+              <Mapping SourceColumn="dataSource" DataSetColumn="dataSource" />
+              <Mapping SourceColumn="kpiData" DataSetColumn="kpiData" />
+              <Mapping SourceColumn="lastYearMonthkpiData" DataSetColumn="lastYearMonthkpiData" />
+              <Mapping SourceColumn="lastYearkpiData" DataSetColumn="lastYearkpiData" />
+              <Mapping SourceColumn="thisYearkpiData" DataSetColumn="thisYearkpiData" />
+              <Mapping SourceColumn="ifComplete" DataSetColumn="ifComplete" />
+              <Mapping SourceColumn="mathFormula" DataSetColumn="mathFormula" />
+              <Mapping SourceColumn="improvementMan" DataSetColumn="improvementMan" />
+              <Mapping SourceColumn="emailID" DataSetColumn="emailID" />
+              <Mapping SourceColumn="reasonAnalysis" DataSetColumn="reasonAnalysis" />
+              <Mapping SourceColumn="improvementMeasures" DataSetColumn="improvementMeasures" />
+              <Mapping SourceColumn="problemState" DataSetColumn="problemState" />
+              <Mapping SourceColumn="Remark" DataSetColumn="Remark" />
+              <Mapping SourceColumn="updateMan" DataSetColumn="updateMan" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="KPIDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="KPIDataSet" msprop:Generator_UserDSName="KPIDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="QMS_KPIDataSource" msprop:Generator_TableClassName="QMS_KPIDataSourceDataTable" msprop:Generator_TableVarName="tableQMS_KPIDataSource" msprop:Generator_TablePropName="QMS_KPIDataSource" msprop:Generator_RowDeletingName="QMS_KPIDataSourceRowDeleting" msprop:Generator_RowChangingName="QMS_KPIDataSourceRowChanging" msprop:Generator_RowEvHandlerName="QMS_KPIDataSourceRowChangeEventHandler" msprop:Generator_RowDeletedName="QMS_KPIDataSourceRowDeleted" msprop:Generator_UserTableName="QMS_KPIDataSource" msprop:Generator_RowChangedName="QMS_KPIDataSourceRowChanged" msprop:Generator_RowEvArgName="QMS_KPIDataSourceRowChangeEvent" msprop:Generator_RowClassName="QMS_KPIDataSourceRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="KpiYeartime" msprop:Generator_ColumnVarNameInTable="columnKpiYeartime" msprop:Generator_ColumnPropNameInRow="KpiYeartime" msprop:Generator_ColumnPropNameInTable="KpiYeartimeColumn" msprop:Generator_UserColumnName="KpiYeartime">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="kpiMonthtime" msprop:Generator_ColumnVarNameInTable="columnkpiMonthtime" msprop:Generator_ColumnPropNameInRow="kpiMonthtime" msprop:Generator_ColumnPropNameInTable="kpiMonthtimeColumn" msprop:Generator_UserColumnName="kpiMonthtime">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="businessType" msprop:Generator_ColumnVarNameInTable="columnbusinessType" msprop:Generator_ColumnPropNameInRow="businessType" msprop:Generator_ColumnPropNameInTable="businessTypeColumn" msprop:Generator_UserColumnName="businessType">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="indicatorsName" msprop:Generator_ColumnVarNameInTable="columnindicatorsName" msprop:Generator_ColumnPropNameInRow="indicatorsName" msprop:Generator_ColumnPropNameInTable="indicatorsNameColumn" msprop:Generator_UserColumnName="indicatorsName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="checkDepartment" msprop:Generator_ColumnVarNameInTable="columncheckDepartment" msprop:Generator_ColumnPropNameInRow="checkDepartment" msprop:Generator_ColumnPropNameInTable="checkDepartmentColumn" msprop:Generator_UserColumnName="checkDepartment">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="undertakeLevel" msprop:Generator_ColumnVarNameInTable="columnundertakeLevel" msprop:Generator_ColumnPropNameInRow="undertakeLevel" msprop:Generator_ColumnPropNameInTable="undertakeLevelColumn" msprop:Generator_UserColumnName="undertakeLevel" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="qualityMan" msprop:Generator_ColumnVarNameInTable="columnqualityMan" msprop:Generator_ColumnPropNameInRow="qualityMan" msprop:Generator_ColumnPropNameInTable="qualityManColumn" msprop:Generator_UserColumnName="qualityMan" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="dataSource" msprop:Generator_ColumnVarNameInTable="columndataSource" msprop:Generator_ColumnPropNameInRow="dataSource" msprop:Generator_ColumnPropNameInTable="dataSourceColumn" msprop:Generator_UserColumnName="dataSource" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="kpiData" msprop:Generator_ColumnVarNameInTable="columnkpiData" msprop:Generator_ColumnPropNameInRow="kpiData" msprop:Generator_ColumnPropNameInTable="kpiDataColumn" msprop:Generator_UserColumnName="kpiData" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="lastYearMonthkpiData" msprop:Generator_ColumnVarNameInTable="columnlastYearMonthkpiData" msprop:Generator_ColumnPropNameInRow="lastYearMonthkpiData" msprop:Generator_ColumnPropNameInTable="lastYearMonthkpiDataColumn" msprop:Generator_UserColumnName="lastYearMonthkpiData" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="lastYearkpiData" msprop:Generator_ColumnVarNameInTable="columnlastYearkpiData" msprop:Generator_ColumnPropNameInRow="lastYearkpiData" msprop:Generator_ColumnPropNameInTable="lastYearkpiDataColumn" msprop:Generator_UserColumnName="lastYearkpiData" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="thisYearkpiData" msprop:Generator_ColumnVarNameInTable="columnthisYearkpiData" msprop:Generator_ColumnPropNameInRow="thisYearkpiData" msprop:Generator_ColumnPropNameInTable="thisYearkpiDataColumn" msprop:Generator_UserColumnName="thisYearkpiData" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ifComplete" msprop:Generator_ColumnVarNameInTable="columnifComplete" msprop:Generator_ColumnPropNameInRow="ifComplete" msprop:Generator_ColumnPropNameInTable="ifCompleteColumn" msprop:Generator_UserColumnName="ifComplete" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="mathFormula" msprop:Generator_ColumnVarNameInTable="columnmathFormula" msprop:Generator_ColumnPropNameInRow="mathFormula" msprop:Generator_ColumnPropNameInTable="mathFormulaColumn" msprop:Generator_UserColumnName="mathFormula" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="improvementMan" msprop:Generator_ColumnVarNameInTable="columnimprovementMan" msprop:Generator_ColumnPropNameInRow="improvementMan" msprop:Generator_ColumnPropNameInTable="improvementManColumn" msprop:Generator_UserColumnName="improvementMan" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="emailID" msprop:Generator_ColumnVarNameInTable="columnemailID" msprop:Generator_ColumnPropNameInRow="emailID" msprop:Generator_ColumnPropNameInTable="emailIDColumn" msprop:Generator_UserColumnName="emailID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="reasonAnalysis" msprop:Generator_ColumnVarNameInTable="columnreasonAnalysis" msprop:Generator_ColumnPropNameInRow="reasonAnalysis" msprop:Generator_ColumnPropNameInTable="reasonAnalysisColumn" msprop:Generator_UserColumnName="reasonAnalysis" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="improvementMeasures" msprop:Generator_ColumnVarNameInTable="columnimprovementMeasures" msprop:Generator_ColumnPropNameInRow="improvementMeasures" msprop:Generator_ColumnPropNameInTable="improvementMeasuresColumn" msprop:Generator_UserColumnName="improvementMeasures" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="problemState" msprop:Generator_ColumnVarNameInTable="columnproblemState" msprop:Generator_ColumnPropNameInRow="problemState" msprop:Generator_ColumnPropNameInTable="problemStateColumn" msprop:Generator_UserColumnName="problemState" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Remark" msprop:Generator_ColumnVarNameInTable="columnRemark" msprop:Generator_ColumnPropNameInRow="Remark" msprop:Generator_ColumnPropNameInTable="RemarkColumn" msprop:Generator_UserColumnName="Remark" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="updateMan" msprop:Generator_ColumnVarNameInTable="columnupdateMan" msprop:Generator_ColumnPropNameInRow="updateMan" msprop:Generator_ColumnPropNameInTable="updateManColumn" msprop:Generator_UserColumnName="updateMan" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:QMS_KPIDataSource" />
+      <xs:field xpath="mstns:KpiYeartime" />
+      <xs:field xpath="mstns:kpiMonthtime" />
+      <xs:field xpath="mstns:businessType" />
+      <xs:field xpath="mstns:indicatorsName" />
+      <xs:field xpath="mstns:checkDepartment" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

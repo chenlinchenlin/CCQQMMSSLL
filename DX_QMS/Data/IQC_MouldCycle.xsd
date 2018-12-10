@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="IQC_MouldCycle" targetNamespace="http://tempuri.org/IQC_MouldCycle.xsd" xmlns:mstns="http://tempuri.org/IQC_MouldCycle.xsd" xmlns="http://tempuri.org/IQC_MouldCycle.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="BarCodeNewConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="BarCodeNewConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.DX_QMS.Properties.Settings.GlobalReference.Default.BarCodeNewConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="IQC_MouldCycleTableAdapter" GeneratorDataComponentClassName="IQC_MouldCycleTableAdapter" Name="IQC_MouldCycle" UserDataComponentName="IQC_MouldCycleTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BarCodeNewConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill" />
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="materialcode" DataSetColumn="materialcode" />
+              <Mapping SourceColumn="vendorcode" DataSetColumn="vendorcode" />
+              <Mapping SourceColumn="Mouldcode" DataSetColumn="Mouldcode" />
+              <Mapping SourceColumn="Mouldtype" DataSetColumn="Mouldtype" />
+              <Mapping SourceColumn="ColorMode" DataSetColumn="ColorMode" />
+              <Mapping SourceColumn="MouldQty" DataSetColumn="MouldQty" />
+              <Mapping SourceColumn="CavityQty" DataSetColumn="CavityQty" />
+              <Mapping SourceColumn="MouldLife" DataSetColumn="MouldLife" />
+              <Mapping SourceColumn="RestQty" DataSetColumn="RestQty" />
+              <Mapping SourceColumn="thisTimeQty" DataSetColumn="thisTimeQty" />
+              <Mapping SourceColumn="updateMan" DataSetColumn="updateMan" />
+              <Mapping SourceColumn="updateTime" DataSetColumn="updateTime" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="IQC_MouldCycle" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="IQC_MouldCycle" msprop:Generator_UserDSName="IQC_MouldCycle">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="IQC_MouldCycle" msprop:Generator_TableClassName="IQC_MouldCycleDataTable" msprop:Generator_TableVarName="tableIQC_MouldCycle" msprop:Generator_RowChangedName="IQC_MouldCycleRowChanged" msprop:Generator_TablePropName="_IQC_MouldCycle" msprop:Generator_RowDeletingName="IQC_MouldCycleRowDeleting" msprop:Generator_RowChangingName="IQC_MouldCycleRowChanging" msprop:Generator_RowEvHandlerName="IQC_MouldCycleRowChangeEventHandler" msprop:Generator_RowDeletedName="IQC_MouldCycleRowDeleted" msprop:Generator_RowClassName="IQC_MouldCycleRow" msprop:Generator_UserTableName="IQC_MouldCycle" msprop:Generator_RowEvArgName="IQC_MouldCycleRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="materialcode" msprop:Generator_ColumnVarNameInTable="columnmaterialcode" msprop:Generator_ColumnPropNameInRow="materialcode" msprop:Generator_ColumnPropNameInTable="materialcodeColumn" msprop:Generator_UserColumnName="materialcode">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="vendorcode" msprop:Generator_ColumnVarNameInTable="columnvendorcode" msprop:Generator_ColumnPropNameInRow="vendorcode" msprop:Generator_ColumnPropNameInTable="vendorcodeColumn" msprop:Generator_UserColumnName="vendorcode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Mouldcode" msprop:Generator_ColumnVarNameInTable="columnMouldcode" msprop:Generator_ColumnPropNameInRow="Mouldcode" msprop:Generator_ColumnPropNameInTable="MouldcodeColumn" msprop:Generator_UserColumnName="Mouldcode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Mouldtype" msprop:Generator_ColumnVarNameInTable="columnMouldtype" msprop:Generator_ColumnPropNameInRow="Mouldtype" msprop:Generator_ColumnPropNameInTable="MouldtypeColumn" msprop:Generator_UserColumnName="Mouldtype" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ColorMode" msprop:Generator_ColumnVarNameInTable="columnColorMode" msprop:Generator_ColumnPropNameInRow="ColorMode" msprop:Generator_ColumnPropNameInTable="ColorModeColumn" msprop:Generator_UserColumnName="ColorMode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MouldQty" msprop:Generator_ColumnVarNameInTable="columnMouldQty" msprop:Generator_ColumnPropNameInRow="MouldQty" msprop:Generator_ColumnPropNameInTable="MouldQtyColumn" msprop:Generator_UserColumnName="MouldQty" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CavityQty" msprop:Generator_ColumnVarNameInTable="columnCavityQty" msprop:Generator_ColumnPropNameInRow="CavityQty" msprop:Generator_ColumnPropNameInTable="CavityQtyColumn" msprop:Generator_UserColumnName="CavityQty" type="xs:string" minOccurs="0" />
+              <xs:element name="MouldLife" msprop:Generator_ColumnVarNameInTable="columnMouldLife" msprop:Generator_ColumnPropNameInRow="MouldLife" msprop:Generator_ColumnPropNameInTable="MouldLifeColumn" msprop:Generator_UserColumnName="MouldLife" type="xs:int" minOccurs="0" />
+              <xs:element name="RestQty" msprop:Generator_ColumnVarNameInTable="columnRestQty" msprop:Generator_ColumnPropNameInRow="RestQty" msprop:Generator_ColumnPropNameInTable="RestQtyColumn" msprop:Generator_UserColumnName="RestQty" type="xs:int" minOccurs="0" />
+              <xs:element name="thisTimeQty" msprop:Generator_ColumnVarNameInTable="columnthisTimeQty" msprop:Generator_ColumnPropNameInRow="thisTimeQty" msprop:Generator_ColumnPropNameInTable="thisTimeQtyColumn" msprop:Generator_UserColumnName="thisTimeQty" type="xs:int" minOccurs="0" />
+              <xs:element name="updateMan" msprop:Generator_ColumnVarNameInTable="columnupdateMan" msprop:Generator_ColumnPropNameInRow="updateMan" msprop:Generator_ColumnPropNameInTable="updateManColumn" msprop:Generator_UserColumnName="updateMan" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="updateTime" msprop:Generator_ColumnVarNameInTable="columnupdateTime" msprop:Generator_ColumnPropNameInRow="updateTime" msprop:Generator_ColumnPropNameInTable="updateTimeColumn" msprop:Generator_UserColumnName="updateTime" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:IQC_MouldCycle" />
+      <xs:field xpath="mstns:materialcode" />
+    </xs:unique>
+    <xs:unique name="IQC_MouldCycleKey1">
+      <xs:selector xpath=".//mstns:IQC_MouldCycle" />
+      <xs:field xpath="mstns:materialcode" />
+      <xs:field xpath="mstns:vendorcode" />
+      <xs:field xpath="mstns:Mouldcode" />
+    </xs:unique>
+    <xs:unique name="IQC_MouldCycleKey2">
+      <xs:selector xpath=".//mstns:IQC_MouldCycle" />
+      <xs:field xpath="mstns:materialcode" />
+      <xs:field xpath="mstns:vendorcode" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

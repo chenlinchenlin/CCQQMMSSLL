@@ -1,0 +1,2103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{81BD68AF-234F-4F97-BE09-093CA95BCB9E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DX_QMS</RootNamespace>
+    <AssemblyName>DX_QMS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>\\qmssvr\qms\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://10.100.0.124:8080/</InstallUrl>
+    <UpdateUrl>\\qmssvr\qms\</UpdateUrl>
+    <TargetCulture>zh-CN</TargetCulture>
+    <ProductName>QMS V1.0</ProductName>
+    <PublisherName>hytera</PublisherName>
+    <SuiteName>QMS</SuiteName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>60</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Start.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>72143AAC232EAC1037F0F209731C8C90A9389C41</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>DX_QMS_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="Devart.Data, Version=5.0.605.0, Culture=neutral, PublicKeyToken=09af7300eec23701, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Devart.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Devart.Data.Universal, Version=3.40.310.0, Culture=neutral, PublicKeyToken=09af7300eec23701, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Devart.Data.Universal.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v16.2" />
+    <Reference Include="DevExpress.Charts.v16.2.Core, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v16.2" />
+    <Reference Include="DevExpress.DataAccess.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v16.2.Core, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v16.2.Core, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v16.2.Core" />
+    <Reference Include="DevExpress.RichEdit.v16.2.Core, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v16.2" />
+    <Reference Include="DevExpress.Xpo.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v16.2" />
+    <Reference Include="DevExpress.Sparkline.v16.2.Core" />
+    <Reference Include="DevExpress.XtraCharts.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v16.2.Extensions, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v16.2.UI, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v16.2.Wizard, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v16.2" />
+    <Reference Include="DevExpress.XtraGrid.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Interop.LabelManager2, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>bin\Debug\Interop.LabelManager2.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>bin\Debug\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Vbe.Interop, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>F:\操作\练习\WindowSPIData\WindowSPIData\bin\Debug\Microsoft.Vbe.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="NationalInstruments.Common, Version=8.7.20.131, Culture=neutral, PublicKeyToken=4544464cdeaab541, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NationalInstruments.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="NationalInstruments.Common.Native, Version=8.9.20.302, Culture=neutral, PublicKeyToken=4544464cdeaab541, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NationalInstruments.Common.Native.dll</HintPath>
+    </Reference>
+    <Reference Include="NationalInstruments.VisaNS, Version=8.5.20.310, Culture=neutral, PublicKeyToken=4544464cdeaab541, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NationalInstruments.VisaNS.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\WMS接口\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.121.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Net.Http">
+      <HintPath>bin\Debug\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives">
+      <HintPath>..\..\WMS接口\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+      <HintPath>bin\Debug\System.Net.Http.WebRequest.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CheckEMSCusLotno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckEMSCusLotno.Designer.cs">
+      <DependentUpon>CheckEMSCusLotno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckEMSLotno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckEMSLotno.Designer.cs">
+      <DependentUpon>CheckEMSLotno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chuhuojianyan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chuhuojianyan.Designer.cs">
+      <DependentUpon>chuhuojianyan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\BackgroundTask.cs" />
+    <Compile Include="Common\COMScanDrive.cs" />
+    <Compile Include="Common\connectionfile.cs" />
+    <Compile Include="Common\DbAccess.cs" />
+    <Compile Include="Common\Dept.cs" />
+    <Compile Include="Common\ExcelHelper.cs" />
+    <Compile Include="Common\ExcelToSQL.cs" />
+    <Compile Include="Common\FileOperate.cs" />
+    <Compile Include="Common\GPIB.cs" />
+    <Compile Include="Common\GridToExcel.cs" />
+    <Compile Include="Common\GroupPermission.cs" />
+    <Compile Include="Common\Groups.cs" />
+    <Compile Include="Common\IQC.cs" />
+    <Compile Include="Common\Mail.cs" />
+    <Compile Include="Common\Module.cs" />
+    <Compile Include="Common\ProdTest.cs" />
+    <Compile Include="Common\Users.cs" />
+    <Compile Include="Data\EMSCus.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EMSCus.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\IQC_MouldCycle.cs">
+      <DependentUpon>IQC_MouldCycle.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\IQC_MouldCycle.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IQC_MouldCycle.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DevExpress\xtraprinting.cs" />
+    <Compile Include="EMSOtherRecList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EMSOtherRecList.Designer.cs">
+      <DependentUpon>EMSOtherRecList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ESDItemInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ESDItemInfo.Designer.cs">
+      <DependentUpon>ESDItemInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ESDProgSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ESDProgSet.Designer.cs">
+      <DependentUpon>ESDProgSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ESDTestLabel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ESDTestLabel.Designer.cs">
+      <DependentUpon>ESDTestLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ESDTestNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ESDTestNew.Designer.cs">
+      <DependentUpon>ESDTestNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExceptionDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExceptionDetails.Designer.cs">
+      <DependentUpon>ExceptionDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IPQC\IPQCExceptionList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IPQC\IPQCExceptionList.Designer.cs">
+      <DependentUpon>IPQCExceptionList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IPQC\IPQCExceptionProgSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IPQC\IPQCExceptionProgSet.Designer.cs">
+      <DependentUpon>IPQCExceptionProgSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IPQC\IPQCExceptionReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IPQC\IPQCExceptionReport.Designer.cs">
+      <DependentUpon>IPQCExceptionReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IQCExceptTestShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IQCExceptTestShow.Designer.cs">
+      <DependentUpon>IQCExceptTestShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IQCFilePosition\IQC_batchChage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IQCFilePosition\IQC_batchChage.Designer.cs">
+      <DependentUpon>IQC_batchChage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IQCFilePosition\IQC_MaterialExpiryDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IQCFilePosition\IQC_MaterialExpiryDate.Designer.cs">
+      <DependentUpon>IQC_MaterialExpiryDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IQCFilePosition\IQCReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IQCFilePosition\IQCReport.Designer.cs">
+      <DependentUpon>IQCReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IQCFilePosition\IQCTestExpiryDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IQCFilePosition\IQCTestExpiryDate.Designer.cs">
+      <DependentUpon>IQCTestExpiryDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IQCFilePosition\IQCUploadFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IQCFilePosition\IQCUploadFile.Designer.cs">
+      <DependentUpon>IQCUploadFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IQCFilePosition\IQC_MouldLife.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IQCFilePosition\IQC_MouldLife.Designer.cs">
+      <DependentUpon>IQC_MouldLife.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IQCFilePosition\IQC_SupperFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IQCFilePosition\IQC_SupperFile.Designer.cs">
+      <DependentUpon>IQC_SupperFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IQCFilePosition\IQC_RepeatTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IQCFilePosition\IQC_RepeatTest.Designer.cs">
+      <DependentUpon>IQC_RepeatTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IQCFilePosition\TestSamplecheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IQCFilePosition\TestSamplecheck.Designer.cs">
+      <DependentUpon>TestSamplecheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IQCRevExcept_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IQCRevExcept_2.Designer.cs">
+      <DependentUpon>IQCRevExcept_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IQCTestListcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IQCTestListcs.Designer.cs">
+      <DependentUpon>IQCTestListcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IQCTestShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IQCTestShow.Designer.cs">
+      <DependentUpon>IQCTestShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KPI\KPIDataSummaries.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KPI\KPIDataSummaries.Designer.cs">
+      <DependentUpon>KPIDataSummaries.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KPI\KPIdata\KPIDataSet.cs">
+      <DependentUpon>KPIDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KPI\KPIdata\KPIDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KPIDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KPI\KPIindicators.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KPI\KPIindicators.Designer.cs">
+      <DependentUpon>KPIindicators.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KPI\KPIitem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KPI\KPIitem.Designer.cs">
+      <DependentUpon>KPIitem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KPI\KPIListNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KPI\KPIListNew.Designer.cs">
+      <DependentUpon>KPIListNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OQCExceptTestShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OQCExceptTestShow.Designer.cs">
+      <DependentUpon>OQCExceptTestShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OQCF1TestList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OQCF1TestList.Designer.cs">
+      <DependentUpon>OQCF1TestList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OQCMESHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OQCMESHistory.Designer.cs">
+      <DependentUpon>OQCMESHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_QMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_QMS.Designer.cs">
+      <DependentUpon>Form_QMS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplashScreen.Designer.cs">
+      <DependentUpon>frmSplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EMSOtherReceiveRpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EMSOtherReceiveRpt.Designer.cs">
+      <DependentUpon>EMSOtherReceiveRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IQCProdPic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IQCProdPic.Designer.cs">
+      <DependentUpon>IQCProdPic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IQCPurchaseMulPcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IQCPurchaseMulPcode.Designer.cs">
+      <DependentUpon>IQCPurchaseMulPcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IQCRevExcept.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IQCRevExcept.Designer.cs">
+      <DependentUpon>IQCRevExcept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IQCTestCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IQCTestCustomer.Designer.cs">
+      <DependentUpon>IQCTestCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialWaitForQC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaterialWaitForQC.Designer.cs">
+      <DependentUpon>MaterialWaitForQC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadingForm.Designer.cs">
+      <DependentUpon>LoadingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OQCCheckAgain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OQCCheckAgain.Designer.cs">
+      <DependentUpon>OQCCheckAgain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OQCSampleList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OQCSampleList.Designer.cs">
+      <DependentUpon>OQCSampleList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OQCTestList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OQCTestList.Designer.cs">
+      <DependentUpon>OQCTestList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OQCTestProgSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OQCTestProgSet.Designer.cs">
+      <DependentUpon>OQCTestProgSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OQCTestShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OQCTestShow.Designer.cs">
+      <DependentUpon>OQCTestShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OQCTestType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OQCTestType.Designer.cs">
+      <DependentUpon>OQCTestType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QARedOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QARedOrder.Designer.cs">
+      <DependentUpon>QARedOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SMTFolder\SMTBadClassDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SMTFolder\SMTBadClassDetails.Designer.cs">
+      <DependentUpon>SMTBadClassDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SMTFolder\SMTC1Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SMTFolder\SMTC1Report.Designer.cs">
+      <DependentUpon>SMTC1Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SMTFolder\SMTFrontReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SMTFolder\SMTFrontReport.Designer.cs">
+      <DependentUpon>SMTFrontReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Suggestions\QMS_FeedBack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Suggestions\QMS_FeedBack.Designer.cs">
+      <DependentUpon>QMS_FeedBack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestIQCCheckAgain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestIQCCheckAgain.Designer.cs">
+      <DependentUpon>TestIQCCheckAgain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestProxyCardSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestProxyCardSet.Designer.cs">
+      <DependentUpon>TestProxyCardSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="QAPackCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QAPackCheck.Designer.cs">
+      <DependentUpon>QAPackCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReliabilitySet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReliabilitySet.Designer.cs">
+      <DependentUpon>ReliabilitySet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReliabilityTypeSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReliabilityTypeSet.Designer.cs">
+      <DependentUpon>ReliabilityTypeSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnSearsh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReturnSearsh.Designer.cs">
+      <DependentUpon>ReturnSearsh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemConfig\QMSassignManagerPower.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemConfig\QMSassignManagerPower.Designer.cs">
+      <DependentUpon>QMSassignManagerPower.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemConfig\DeptInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemConfig\DeptInfo.Designer.cs">
+      <DependentUpon>DeptInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemConfig\PostMaintain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemConfig\PostMaintain.Designer.cs">
+      <DependentUpon>PostMaintain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemConfig\QMSEmployeePower.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemConfig\QMSEmployeePower.Designer.cs">
+      <DependentUpon>QMSEmployeePower.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemConfig\QMSGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemConfig\QMSGroup.Designer.cs">
+      <DependentUpon>QMSGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemConfig\QMSMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemConfig\QMSMenu.Designer.cs">
+      <DependentUpon>QMSMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemConfig\QMSModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemConfig\QMSModel.Designer.cs">
+      <DependentUpon>QMSModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemConfig\QMSRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemConfig\QMSRegister.Designer.cs">
+      <DependentUpon>QMSRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemConfig\SetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemConfig\SetPassword.Designer.cs">
+      <DependentUpon>SetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemConfig\SetUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemConfig\SetUser.Designer.cs">
+      <DependentUpon>SetUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemConfig\TreeViewRule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemConfig\TreeViewRule.Designer.cs">
+      <DependentUpon>TreeViewRule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemConfig\UsersInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemConfig\UsersInfo.Designer.cs">
+      <DependentUpon>UsersInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestBigTypeSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestBigTypeSet.Designer.cs">
+      <DependentUpon>TestBigTypeSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OQCTestListSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OQCTestListSearch.Designer.cs">
+      <DependentUpon>OQCTestListSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestItemInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestItemInfo.Designer.cs">
+      <DependentUpon>TestItemInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestListcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestListcs.Designer.cs">
+      <DependentUpon>TestListcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestListRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestListRecord.Designer.cs">
+      <DependentUpon>TestListRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FailureAnalysisDataInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FailureAnalysisDataInput.Designer.cs">
+      <DependentUpon>FailureAnalysisDataInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestListSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestListSearch.Designer.cs">
+      <DependentUpon>TestListSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestMaterialCheckBySQE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestMaterialCheckBySQE.Designer.cs">
+      <DependentUpon>TestMaterialCheckBySQE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestProgSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestProgSet.Designer.cs">
+      <DependentUpon>TestProgSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestResultCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestResultCheck.Designer.cs">
+      <DependentUpon>TestResultCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestResultNGToOKCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestResultNGToOKCheck.Designer.cs">
+      <DependentUpon>TestResultNGToOKCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestROHS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestROHS.Designer.cs">
+      <DependentUpon>TestROHS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestSampleList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestSampleList.Designer.cs">
+      <DependentUpon>TestSampleList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestSamplePosition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestSamplePosition.Designer.cs">
+      <DependentUpon>TestSamplePosition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestSubItemInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestSubItemInfo.Designer.cs">
+      <DependentUpon>TestSubItemInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialLot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaterialLot.Designer.cs">
+      <DependentUpon>MaterialLot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestToolsSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestToolsSet.Designer.cs">
+      <DependentUpon>TestToolsSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestValue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestValue.Designer.cs">
+      <DependentUpon>TestValue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestValueQtyList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestValueQtyList.Designer.cs">
+      <DependentUpon>TestValueQtyList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tongyongjianyan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tongyongjianyan.Designer.cs">
+      <DependentUpon>tongyongjianyan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IQCTestReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IQCTestReturn.Designer.cs">
+      <DependentUpon>IQCTestReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OQCReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OQCReport.Designer.cs">
+      <DependentUpon>OQCReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OQCinformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OQCinformation.Designer.cs">
+      <DependentUpon>OQCinformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WMSInterface\WIHeader.cs" />
+    <Compile Include="WMSInterface\WIInput.cs" />
+    <Compile Include="WMSInterface\WIRequst.cs" />
+    <Compile Include="WMSInterface\WMSInterfaceUtils.cs" />
+    <Compile Include="WMSInterface\WMSIQCInputItem.cs" />
+    <Compile Include="WMSInterface\WMSIQCResult.cs" />
+    <Compile Include="WMSInterface\WMSIQCResultHead.cs" />
+    <Compile Include="WMSInterface\WMSIQCTestInputData.cs" />
+    <Compile Include="WMSInterface\WMSIQCTestItem.cs" />
+    <Compile Include="WMSInterface\WMSIQCTestRequestData.cs" />
+    <Compile Include="WMSInterface\WMSLPNHeader.cs" />
+    <Compile Include="WMSInterface\WMSLPNInputParamData.cs" />
+    <Compile Include="WMSInterface\WMSLPNItem.cs" />
+    <Compile Include="WMSInterface\WMSLPNRequestData.cs" />
+    <Compile Include="WMSInterface\WMSLPNSnItem.cs" />
+    <Compile Include="WMSInterface\WMSPickItemCode.cs" />
+    <Compile Include="WMSInterface\WMSPickSnItem.cs" />
+    <Compile Include="WMSInterface\WMSPickSNSet.cs" />
+    <Compile Include="WMSInterface\WMSSmtStationInputParamData.cs" />
+    <Compile Include="WMSInterface\WMSSmtStationItem.cs" />
+    <Compile Include="WMSInterface\WMSSmtStationRequestData.cs" />
+    <Compile Include="WMSInterface\WMSWorkPick.cs" />
+    <Compile Include="WMSInterface\WMSWorkPickInput.cs" />
+    <Compile Include="WMSInterface\WsRequest.cs" />
+    <EmbeddedResource Include="CheckEMSCusLotno.resx">
+      <DependentUpon>CheckEMSCusLotno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckEMSLotno.resx">
+      <DependentUpon>CheckEMSLotno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chuhuojianyan.resx">
+      <DependentUpon>chuhuojianyan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EMSOtherRecList.resx">
+      <DependentUpon>EMSOtherRecList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ESDItemInfo.resx">
+      <DependentUpon>ESDItemInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ESDProgSet.resx">
+      <DependentUpon>ESDProgSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ESDTestLabel.resx">
+      <DependentUpon>ESDTestLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ESDTestNew.resx">
+      <DependentUpon>ESDTestNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExceptionDetails.resx">
+      <DependentUpon>ExceptionDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IPQC\IPQCExceptionList.resx">
+      <DependentUpon>IPQCExceptionList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IPQC\IPQCExceptionProgSet.resx">
+      <DependentUpon>IPQCExceptionProgSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IPQC\IPQCExceptionReport.resx">
+      <DependentUpon>IPQCExceptionReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IQCExceptTestShow.resx">
+      <DependentUpon>IQCExceptTestShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IQCFilePosition\IQC_batchChage.resx">
+      <DependentUpon>IQC_batchChage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IQCFilePosition\IQC_MaterialExpiryDate.resx">
+      <DependentUpon>IQC_MaterialExpiryDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IQCFilePosition\IQCReport.resx">
+      <DependentUpon>IQCReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IQCFilePosition\IQCTestExpiryDate.resx">
+      <DependentUpon>IQCTestExpiryDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IQCFilePosition\IQCUploadFile.resx">
+      <DependentUpon>IQCUploadFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IQCFilePosition\IQC_MouldLife.resx">
+      <DependentUpon>IQC_MouldLife.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IQCFilePosition\IQC_SupperFile.resx">
+      <DependentUpon>IQC_SupperFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IQCFilePosition\IQC_RepeatTest.resx">
+      <DependentUpon>IQC_RepeatTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IQCFilePosition\TestSamplecheck.resx">
+      <DependentUpon>TestSamplecheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IQCRevExcept_2.resx">
+      <DependentUpon>IQCRevExcept_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IQCTestListcs.resx">
+      <DependentUpon>IQCTestListcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IQCTestShow.resx">
+      <DependentUpon>IQCTestShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KPI\KPIDataSummaries.resx">
+      <DependentUpon>KPIDataSummaries.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KPI\KPIindicators.resx">
+      <DependentUpon>KPIindicators.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KPI\KPIitem.resx">
+      <DependentUpon>KPIitem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KPI\KPIListNew.resx">
+      <DependentUpon>KPIListNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OQCExceptTestShow.resx">
+      <DependentUpon>OQCExceptTestShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OQCF1TestList.resx">
+      <DependentUpon>OQCF1TestList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OQCMESHistory.resx">
+      <DependentUpon>OQCMESHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_QMS.resx">
+      <DependentUpon>Form_QMS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSplashScreen.resx">
+      <DependentUpon>frmSplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EMSOtherReceiveRpt.resx">
+      <DependentUpon>EMSOtherReceiveRpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IQCProdPic.resx">
+      <DependentUpon>IQCProdPic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IQCPurchaseMulPcode.resx">
+      <DependentUpon>IQCPurchaseMulPcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IQCRevExcept.resx">
+      <DependentUpon>IQCRevExcept.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IQCTestCustomer.resx">
+      <DependentUpon>IQCTestCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterialWaitForQC.resx">
+      <DependentUpon>MaterialWaitForQC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadingForm.resx">
+      <DependentUpon>LoadingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OQCCheckAgain.resx">
+      <DependentUpon>OQCCheckAgain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OQCSampleList.resx">
+      <DependentUpon>OQCSampleList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OQCTestList.resx">
+      <DependentUpon>OQCTestList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OQCTestProgSet.resx">
+      <DependentUpon>OQCTestProgSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OQCTestShow.resx">
+      <DependentUpon>OQCTestShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OQCTestType.resx">
+      <DependentUpon>OQCTestType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QARedOrder.resx">
+      <DependentUpon>QARedOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SMTFolder\SMTBadClassDetails.resx">
+      <DependentUpon>SMTBadClassDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SMTFolder\SMTC1Report.resx">
+      <DependentUpon>SMTC1Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SMTFolder\SMTFrontReport.resx">
+      <DependentUpon>SMTFrontReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Suggestions\QMS_FeedBack.resx">
+      <DependentUpon>QMS_FeedBack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestIQCCheckAgain.resx">
+      <DependentUpon>TestIQCCheckAgain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestProxyCardSet.resx">
+      <DependentUpon>TestProxyCardSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QAPackCheck.resx">
+      <DependentUpon>QAPackCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReliabilitySet.resx">
+      <DependentUpon>ReliabilitySet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReliabilityTypeSet.resx">
+      <DependentUpon>ReliabilityTypeSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReturnSearsh.resx">
+      <DependentUpon>ReturnSearsh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemConfig\DeptInfo.resx">
+      <DependentUpon>DeptInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemConfig\PostMaintain.resx">
+      <DependentUpon>PostMaintain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemConfig\QMSassignManagerPower.resx">
+      <DependentUpon>QMSassignManagerPower.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemConfig\QMSEmployeePower.resx">
+      <DependentUpon>QMSEmployeePower.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemConfig\QMSGroup.resx">
+      <DependentUpon>QMSGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemConfig\QMSMenu.resx">
+      <DependentUpon>QMSMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemConfig\QMSModel.resx">
+      <DependentUpon>QMSModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemConfig\QMSRegister.resx">
+      <DependentUpon>QMSRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemConfig\SetPassword.resx">
+      <DependentUpon>SetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemConfig\SetUser.resx">
+      <DependentUpon>SetUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemConfig\TreeViewRule.resx">
+      <DependentUpon>TreeViewRule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemConfig\UsersInfo.resx">
+      <DependentUpon>UsersInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestBigTypeSet.resx">
+      <DependentUpon>TestBigTypeSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OQCTestListSearch.resx">
+      <DependentUpon>OQCTestListSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestItemInfo.resx">
+      <DependentUpon>TestItemInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestListcs.resx">
+      <DependentUpon>TestListcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestListRecord.resx">
+      <DependentUpon>TestListRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FailureAnalysisDataInput.resx">
+      <DependentUpon>FailureAnalysisDataInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestListSearch.resx">
+      <DependentUpon>TestListSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestMaterialCheckBySQE.resx">
+      <DependentUpon>TestMaterialCheckBySQE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestProgSet.resx">
+      <DependentUpon>TestProgSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestResultCheck.resx">
+      <DependentUpon>TestResultCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestResultNGToOKCheck.resx">
+      <DependentUpon>TestResultNGToOKCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestROHS.resx">
+      <DependentUpon>TestROHS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestSampleList.resx">
+      <DependentUpon>TestSampleList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestSamplePosition.resx">
+      <DependentUpon>TestSamplePosition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestSubItemInfo.resx">
+      <DependentUpon>TestSubItemInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterialLot.resx">
+      <DependentUpon>MaterialLot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestToolsSet.resx">
+      <DependentUpon>TestToolsSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestValue.resx">
+      <DependentUpon>TestValue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestValueQtyList.resx">
+      <DependentUpon>TestValueQtyList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tongyongjianyan.resx">
+      <DependentUpon>tongyongjianyan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IQCTestReturn.resx">
+      <DependentUpon>IQCTestReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OQCReport.resx">
+      <DependentUpon>OQCReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OQCinformation.resx">
+      <DependentUpon>OQCinformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Data\EMSCus.xsc">
+      <DependentUpon>EMSCus.xsd</DependentUpon>
+    </None>
+    <None Include="Data\EMSCus.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EMSCus.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\EMSCus.xss">
+      <DependentUpon>EMSCus.xsd</DependentUpon>
+    </None>
+    <None Include="Data\IQC_MouldCycle.xsc">
+      <DependentUpon>IQC_MouldCycle.xsd</DependentUpon>
+    </None>
+    <None Include="Data\IQC_MouldCycle.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IQC_MouldCycle.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\IQC_MouldCycle.xss">
+      <DependentUpon>IQC_MouldCycle.xsd</DependentUpon>
+    </None>
+    <None Include="DX_QMS_TemporaryKey.pfx" />
+    <None Include="KPI\KPIdata\KPIDataSet.xsc">
+      <DependentUpon>KPIDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KPI\KPIdata\KPIDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KPIDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="KPI\KPIdata\KPIDataSet.xss">
+      <DependentUpon>KPIDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Content Include="Report.xls" />
+    <Content Include="ReportFolder\OQCreport.xlsx" />
+    <Content Include="ReportFolder\OQC测试项目.xlsx" />
+    <Content Include="ReportFolder\OQCF1report.xlsx" />
+    <Content Include="ReportFolder\OQC异常处理单.xlsx" />
+    <Content Include="ReportFolder\制程异常处理单表格.xlsx" />
+    <Content Include="ReportFolder\ReturnReport.xls" />
+    <Content Include="ReportFolder\供应商环保资料清单.xlsx" />
+    <Content Include="ReportFolder\MaterialExpiryDate.xls" />
+    <None Include="Resources\DiamondBlue.ssk" />
+    <None Include="Resources\DiamondGreen.ssk" />
+    <None Include="Resources\MacOS.ssk" />
+    <Content Include="Resources\Report.xls" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Start.ico" />
+    <Content Include="快捷.ico" />
+    <None Include="Resources\blue.jpg" />
+    <Content Include="denglu.ico" />
+    <Content Include="Resources\close1.png" />
+    <None Include="Resources\close2.png" />
+    <Content Include="Resources\denglu.ico" />
+    <Content Include="Resources\error.wav" />
+    <None Include="Resources\guanbi.png" />
+    <None Include="Resources\guanbi1.png" />
+    <Content Include="Resources\keji.jpg" />
+    <Content Include="Resources\min1.png" />
+    <None Include="Resources\min2.png" />
+    <Content Include="Resources\NG.png" />
+    <Content Include="Resources\OK.png" />
+    <Content Include="Resources\ooopic_1505733283.ico" />
+    <Content Include="Resources\password.bmp" />
+    <None Include="Resources\qidong\zuixiao1.png" />
+    <None Include="Resources\qidong\guanbi.png" />
+    <None Include="Resources\qidong\guanbi1.png" />
+    <None Include="Resources\qidong\zuixiao.png" />
+    <Content Include="Resources\QMS.jpg" />
+    <Content Include="Resources\SIREN3.WAV" />
+    <Content Include="Resources\TopCarBg.jpg" />
+    <Content Include="Resources\user.bmp" />
+    <None Include="Resources\yellow.jpg" />
+    <None Include="Resources\zuixiao1.png" />
+    <None Include="Resources\zuixiao.png" />
+    <Content Include="Resources\个人信息设置.jpg" />
+    <Content Include="Resources\密码.png" />
+    <Content Include="Resources\登陆界面..jpg" />
+    <Content Include="Resources\账号.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="DevExpress.Images.v16.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="de\DevExpress.Data.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="de\DevExpress.DataAccess.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="de\DevExpress.Office.v16.2.Core.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="de\DevExpress.Pdf.v16.2.Core.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="de\DevExpress.Printing.v16.2.Core.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="de\DevExpress.RichEdit.v16.2.Core.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="de\DevExpress.Sparkline.v16.2.Core.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="de\DevExpress.Utils.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="de\DevExpress.Utils.v16.2.UI.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="de\DevExpress.Xpo.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="de\DevExpress.XtraBars.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="de\DevExpress.XtraCharts.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="de\DevExpress.XtraCharts.v16.2.Wizard.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="de\DevExpress.XtraEditors.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="de\DevExpress.XtraGrid.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="de\DevExpress.XtraLayout.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="de\DevExpress.XtraNavBar.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="de\DevExpress.XtraPrinting.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="de\DevExpress.XtraRichEdit.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="de\DevExpress.XtraTreeList.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="de\DevExpress.XtraVerticalGrid.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="es\DevExpress.Data.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="es\DevExpress.DataAccess.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="es\DevExpress.Office.v16.2.Core.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="es\DevExpress.Pdf.v16.2.Core.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="es\DevExpress.Printing.v16.2.Core.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="es\DevExpress.RichEdit.v16.2.Core.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="es\DevExpress.Sparkline.v16.2.Core.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="es\DevExpress.Utils.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="es\DevExpress.Utils.v16.2.UI.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="es\DevExpress.Xpo.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="es\DevExpress.XtraBars.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="es\DevExpress.XtraCharts.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="es\DevExpress.XtraCharts.v16.2.Wizard.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="es\DevExpress.XtraEditors.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="es\DevExpress.XtraGrid.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="es\DevExpress.XtraLayout.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="es\DevExpress.XtraNavBar.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="es\DevExpress.XtraPrinting.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="es\DevExpress.XtraRichEdit.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="es\DevExpress.XtraTreeList.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="es\DevExpress.XtraVerticalGrid.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ja\DevExpress.Data.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ja\DevExpress.DataAccess.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ja\DevExpress.Office.v16.2.Core.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ja\DevExpress.Pdf.v16.2.Core.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ja\DevExpress.Printing.v16.2.Core.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ja\DevExpress.RichEdit.v16.2.Core.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ja\DevExpress.Sparkline.v16.2.Core.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ja\DevExpress.Utils.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ja\DevExpress.Utils.v16.2.UI.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ja\DevExpress.Xpo.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ja\DevExpress.XtraBars.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ja\DevExpress.XtraCharts.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ja\DevExpress.XtraCharts.v16.2.Wizard.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ja\DevExpress.XtraEditors.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ja\DevExpress.XtraGrid.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ja\DevExpress.XtraLayout.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ja\DevExpress.XtraNavBar.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ja\DevExpress.XtraPrinting.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ja\DevExpress.XtraRichEdit.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ja\DevExpress.XtraTreeList.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ja\DevExpress.XtraVerticalGrid.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ru\DevExpress.Data.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ru\DevExpress.DataAccess.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ru\DevExpress.Office.v16.2.Core.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ru\DevExpress.Pdf.v16.2.Core.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ru\DevExpress.Printing.v16.2.Core.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ru\DevExpress.RichEdit.v16.2.Core.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ru\DevExpress.Sparkline.v16.2.Core.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ru\DevExpress.Utils.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ru\DevExpress.Utils.v16.2.UI.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ru\DevExpress.Xpo.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ru\DevExpress.XtraBars.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ru\DevExpress.XtraCharts.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ru\DevExpress.XtraCharts.v16.2.Wizard.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ru\DevExpress.XtraEditors.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ru\DevExpress.XtraGrid.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ru\DevExpress.XtraLayout.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ru\DevExpress.XtraNavBar.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ru\DevExpress.XtraPrinting.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ru\DevExpress.XtraRichEdit.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ru\DevExpress.XtraTreeList.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ru\DevExpress.XtraVerticalGrid.v16.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Outlook">
+      <Guid>{00062FFF-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>9</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
